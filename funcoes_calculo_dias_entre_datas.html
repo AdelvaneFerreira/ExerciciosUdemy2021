@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+    <meta charset="utf-8">
+      <title>'Cálculo de dias entre datas'</title>
+    <script>
+
+
+    var data1 = new Date(2021, 7, 1)
+   
+    var data2 = new Date(2021, 9, 1)
+
+    document.write(data1.toString())
+    document.write('<hr>')
+    document.write(data2.toString())
+    document.write('<hr>')
+
+    //Transformar as datas em números a fim de realizar cálculos
+    var milissegundos_data1 = (data1.getTime())
+    document.write('<hr>')
+    var milissegundos_data2 = (data2.getTime())
+    document.write('<hr>')
+    var milissegundos_entre_datas = (data2.getTime()-(data1.getTime()))
+
+    var milissegundos_por_dia = (1*24*60*60*1000)
+    document.write('<hr>')
+
+    document.write('A diferença entre as datas é de '+milissegundos_entre_datas/milissegundos_por_dia+ ' dia(s)')
+
+  </script>
+	</head>
+  <body>
+
+  </body>
+ </html>
